@@ -1,0 +1,14 @@
+#Tue Jul 26 11:14:37 CST 2016
+tomcat6Server.hot-share.isExploded=true
+tomcat6Server.hot-share.isUptoDate=true
+tomcat6Server.hot-share.altContextRoot=
+tomcat6Server.hot-share.contextRoot=/hot-share
+tomcat6Server.hot-share.deploymentPath=D\:\\apache-tomcat-6.0.30\\webapps\\hot-share
+tomcat6Server.hot-share.isDeployed=true
+tomcat6Server.hot-share.noFileCopy=false
+tomcat6Server.hot-share.shouldOverwrite=false
+tomcat6Server.hot-share.type=WebDeployment
+eclipse.preferences.version=1
+tomcat6Server.hot-share.IEARProjectName=
+tomcat6Server.hot-share.shouldBackup=false
+tomcat6Server.hot-share.deployIsOverProject=false
