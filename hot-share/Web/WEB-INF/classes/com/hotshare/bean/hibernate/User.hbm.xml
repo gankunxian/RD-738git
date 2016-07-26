@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.User" table="u_user">
+		<comment>前端用户表</comment>
+		<id name="userId" column="USER_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="account" 
+				column="ACCOUNT" 
+				type="string"
+				unique="true" 
+				not-null="false" />
+				
+		<property name="password" 
+			column="PASSWORD" 
+			type="string"
+			not-null="true" />
+			
+		<property name="nickname" 
+			column="NICKNAME" 
+			type="string" />
+			
+		<property name="phone" 
+			column="PHONE" 
+			type="string" />	
+			
+		<property name="level" 
+			column="LEVEL" 
+			type="short" />
+		
+		<property name="headImgPath" 
+			column="HEAD_IMG_PATH" 
+			type="string" />	
+			
+		<property name="state" 
+			column="STATE" 
+			type="short" />
+			
+		<property name="regTime" 
+			column="REG_TIME" 
+			type="java.util.Date" />
+			
+		<property name="regCode" 
+			column="REG_CODE" 
+			type="string" />
+			
+		<property name="shareCode" 
+			column="SHARE_CODE" 
+			type="string" />	
+			
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.UserWallet" table="u_user_wallet">
+		<comment>前端用户钱包表</comment>
+		<id name="userWalletId" column="USER_WALLET_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="alipayAccount" 
+				column="ALIPAY_ACCOUNT" 
+				type="string"
+				not-null="false" />
+				
+		<property name="alipayName" 
+			column="ALIPAY_NAME" 
+			type="string"
+			not-null="true" />
+			
+		<property name="balance" 
+			column="BALANCE" 
+			type="double" />
+			
+		<property name="commission" 
+			column="COMMISSION" 
+			type="double" />	
+			
+		<property name="recharge" 
+			column="RECHARGE" 
+			type="double" />
+		
+		<property name="income" 
+			column="INCOME" 
+			type="double" />	
+			
+		<property name="state" 
+			column="STATE" 
+			type="short" />
+			
+		<property name="updateTime" 
+			column="UPDATE_TIME" 
+			type="java.util.Date" />
+			
+		<many-to-one
+			name="user"
+			column="USER_ID"
+			class="com.hotshare.bean.User"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>	
+			
+			
+	</class>
+</hibernate-mapping>

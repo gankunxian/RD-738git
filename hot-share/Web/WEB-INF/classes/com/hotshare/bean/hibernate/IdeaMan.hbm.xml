@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.IdeaMan" table="u_idea_man">
+		<comment>前端广告创意人表</comment>
+		<id name="ideaManId" column="IDEA_MAN_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="name" 
+				column="NAME" 
+				type="string"
+				not-null="false" />
+				
+		<property name="phone" 
+			column="PHONE" 
+			type="string"
+			not-null="true" />
+			
+		<property name="slogan" 
+			column="SLOGAN" 
+			type="string" />
+		
+		<property name="headImgPath" 
+			column="HEAD_IMG_PATH" 
+			type="string" />	
+			
+		<property name="state" 
+			column="STATE" 
+			type="short" />
+			
+		<property name="createTime" 
+			column="CREATE_TIME" 
+			type="java.util.Date" />
+			
+	</class>
+</hibernate-mapping>

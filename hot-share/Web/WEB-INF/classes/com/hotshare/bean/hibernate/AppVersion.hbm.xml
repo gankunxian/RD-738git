@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	<class name="com.hotshare.bean.AppVersion" table="app_version">
+		<comment>app版本管理表</comment>
+		<id name="id" column="ID" type="int">
+			<generator class="native" />
+		</id>
+		<property
+			name="type"
+			column="TYPE"
+			type="short"
+		/>
+		<property
+			name="version"
+			column="VERSION"
+			type="float"
+		/>
+		<property
+			name="appUrl"
+			column="APP_URL"
+			type="string"
+		/>
+		<property
+			name="remark"
+			column="REMARK"
+			type="string"
+		/>	
+		<property name="createTime" 
+			column="CREATE_TIME" 
+			type="java.util.Date" />
+			
+			
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.SystemMessage" table="u_system_message">
+		<comment>系统消息表</comment>
+		<id name="id" column="ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="title" column="TITLE" type="string" />
+		<property name="content" type="string">
+			<column name="CONTENT" sql-type="text" />
+		</property>
+		<property name="createTime" column="CREATE_TIME" type="java.util.Date" />
+		<property name="remark" type="string">
+			<column name="REMARK" sql-type="text" />
+		</property>
+
+
+	</class>
+</hibernate-mapping>

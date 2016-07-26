@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.Advert" table="u_advert">
+		<comment>前端广告表</comment>
+		<id name="advertId" column="ADVERT_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="title" 
+				column="TITLE" 
+				type="string"
+				not-null="false" />
+				
+		<property name="content" 
+			column="CONTENT" 
+			type="text"
+			not-null="true" />
+			
+		<property name="tel" 
+			column="TEL" 
+			type="string" />
+			
+		<property name="address" 
+			column="ADDRESS" 
+			type="string" />	
+			
+		<property name="remark" 
+			column="REMARK" 
+			type="string" />
+		
+		<property name="longitude" 
+			column="LONGITUDE" 
+			type="double" />
+			
+		<property name="latitude" 
+			column="LATITUDE" 
+			type="double" />
+			
+		<property name="unitPrice" 
+			column="UNIT_PRICE" 
+			type="double" />
+			
+		<property name="totalPrice" 
+			column="TOTAL_PRICE" 
+			type="double" />
+			
+		<property name="frequency" 
+			column="FREQUENCY" 
+			type="double" />	
+			
+		<property name="shareCount" 
+			column="SHARE_COUNT" 
+			type="int" />					
+			
+		<property name="state" 
+			column="STATE" 
+			type="short" />
+			
+		<property name="createTime" 
+			column="CREATE_TIME" 
+			type="java.util.Date" />
+			
+		<many-to-one
+			name="category"
+			column="CATEGORY_ID"
+			class="com.hotshare.bean.Category"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>
+		
+		<many-to-one
+			name="user"
+			column="USER_ID"
+			class="com.hotshare.bean.User"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>	
+			
+			
+	</class>
+</hibernate-mapping>

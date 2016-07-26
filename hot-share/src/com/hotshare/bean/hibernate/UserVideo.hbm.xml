@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.UserVideo" table="u_user_video">
+		<comment>前端用户上传审核星级视频表</comment>
+		<id name="userVideoId" column="USER_VIDEO_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="videoUrl" 
+				column="VIDEO_URL" 
+				type="string"
+				not-null="false" />
+				
+		<property name="state" 
+			column="STATE" 
+			type="short" />
+			
+		<property name="createTime" 
+			column="CREATE_TIME" 
+			type="java.util.Date" />
+			
+			
+		<many-to-one
+			name="user"
+			column="USER_ID"
+			class="com.hotshare.bean.User"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>
+		
+	</class>
+</hibernate-mapping>

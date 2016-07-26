@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="hot-share"
+  id="myeclipse.1406593817341"
+  context-root="/hot-share"
+  j2ee-spec="5.0"
+  archive="hot-share.war">
+  <attributes>
+    <attribute name="webrootdir" value="/Web" />
+  </attributes>
+</project-module>
+

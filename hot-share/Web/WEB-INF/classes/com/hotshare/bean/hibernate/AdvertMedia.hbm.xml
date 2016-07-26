@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.AdvertMedia" table="u_advert_media">
+		<comment>前端广告媒体表</comment>
+		<id name="advertMediaId" column="AD_MEDIA_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="imgUrl" 
+				column="IMG_URL" 
+				type="string"
+				not-null="false" />
+				
+		<property name="videoUrl" 
+			column="VIDEO_URL" 
+			type="string"
+			not-null="true" />
+			
+			
+		<property name="type" 
+			column="TYPE" 
+			type="short" />					
+			
+		<property name="isTop" 
+			column="IS_TOP" 
+			type="short" />
+			
+		<property name="state" 
+			column="STATE" 
+			type="short" />	
+			
+		<property name="createTime" 
+			column="CREATE_TIME" 
+			type="java.util.Date" />
+			
+		<many-to-one
+			name="advert"
+			column="ADVERT_ID"
+			class="com.hotshare.bean.Advert"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>
+			
+	</class>
+</hibernate-mapping>

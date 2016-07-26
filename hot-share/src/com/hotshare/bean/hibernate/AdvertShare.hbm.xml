@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.AdvertShare" table="u_advert_share">
+		<comment>前端广告分享表</comment>
+		<id name="advertShareId" column="ADVERT_SHARE_ID" type="int">
+			<generator class="native" />
+		</id>
+		<property name="shareCode" 
+				column="SHARE_CODE" 
+				type="string"
+				not-null="false" />
+				
+		<property name="state" 
+			column="STATE" 
+			type="short" />
+			
+		<property name="createTime" 
+			column="CREATE_TIME" 
+			type="java.util.Date" />
+			
+			
+		<many-to-one
+			name="advert"
+			column="ADVERT_ID"
+			class="com.hotshare.bean.Advert"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>
+		
+		<many-to-one
+			name="user"
+			column="USER_ID"
+			class="com.hotshare.bean.User"
+			not-null="false"
+			lazy="false"
+		>
+		</many-to-one>	
+			
+			
+	</class>
+</hibernate-mapping>

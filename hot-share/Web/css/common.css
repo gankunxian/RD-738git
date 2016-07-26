@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+body {
+	font-family: "sim-sun", "Geneva", "Arial", "Helvetica", "sans-serif";
+}
+
+tr,td,li {
+	line-height: 21px;
+	font-size: 12px;
+	color: #333333;
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:hover {
+	color: black;
+}
+
+img {
+	cursor: pointer;
+}
+
+form  label {
+	display: inline-block;
+	font-size: 12px;
+	text-align: left;
+	margin-right: 5px;
+}
+
+form div label {
+	width: 90px;
+	display: inline-block;
+	font-size: 15px;
+	text-align: left
+}
+
+form div {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+form td {
+	height: 25px;
+	font-size: 12px;
+	width: 170px;
+}
+
+form textarea {
+	font-size: 12px;
+	width: 170px;
+	height: 60px;
+	resize: none;
+}
+
+form td,form tr {
+	text-align: left;
+	white-space: nowrap;
+	margin-right: 5px;
+	padding-right: 10px;
+	padding-top: 10px;
+	background-color: #ffffff;
+}
+
+.formtext {
+	width: 290px;
+	height: 25px;
+	font-size: 12px;
+	*line-height: 25px;
+	outline: none;
+}
+
+.formbutton {
+	height: 30px;
+	width: 50px;
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.separate {
+	float: none;
+	display: inline-block;
+	*display: inline;
+	vertical-align: middle;
+	*margin-top: -4px;
+}
+
+.searchInput {
+	margin-top: 4px;
+	height:20px;
+	width:120px;
+}
+
+a:hover{
+	border:1px solid #cbcbcb;
+	color:red;
+	text-decoration:underline;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.hotshare.bean">
+	<class
+		name="Zone"
+		table="s_zone"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="zoneId"
+			type="int"
+			column="ZONE_ID"
+		>
+			<generator class="native"/>
+		</id>
+
+		<property
+			name="zoneNo"
+			column="ZONE_NO"
+			type="string"
+		/>
+		<property
+			name="zoneName"
+			column="ZONE_NAME"
+			type="string"
+		/>
+		<property
+			name="state"
+			column="STATE"
+			type="short"
+		/>
+		<property
+			name="fatherNo"
+			column="FATHER_NO"
+			type="string"
+		/>
+		<property
+			name="level"
+			column="LEVEL"
+			type="short"
+		/>
+		
+		<property
+			name="createTime"
+			column="CREATE_TIME"
+			type="java.util.Date"
+		/>
+		
+		<property
+			name="isHot"
+			column="IS_HOT"
+			type="short"
+		/>
+		
+		<property
+			name="initial"
+			column="INITIAL"
+			type="string"
+		/>
+		<property
+			name="sort"
+			column="SORT"
+			type="short"
+		/>
+		
+		<property
+			name="remark"
+			column="REMARK"
+			type="string"
+		/>
+
+	</class>	
+</hibernate-mapping>

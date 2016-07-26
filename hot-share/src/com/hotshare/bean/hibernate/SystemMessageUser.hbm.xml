@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.SystemMessageUser" table="u_system_message_user">
+		<comment>系统消息用户关系表</comment>
+		<id name="id" column="ID" type="int">
+			<generator class="native" />
+		</id>
+
+		<many-to-one name="message" 
+			class="com.hotshare.bean.SystemMessage" not-null="true" cascade="all" >
+			<column name="SYSTEM_MESSAGE_ID" sql-type="int" />
+		</many-to-one>
+		<many-to-one name="sender" 
+			class="com.hotshare.bean.Manager" not-null="true" cascade="all" >
+			<column name="SEND_PASS_ID" sql-type="bigint" />
+		</many-to-one>
+
+		<many-to-one name="accepter" column="ACCEPT_USER_ID"
+			class="com.hotshare.bean.User" not-null="true" cascade="all" />
+
+		<property name="state" type="int">
+			<column name="STATE" sql-type="smallint" />
+		</property>
+
+
+
+	</class>
+</hibernate-mapping>

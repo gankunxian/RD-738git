@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+
+.icon-user-list {
+    background: url(../images/icon/user.png) no-repeat !important;
+}
+
+.icon-user-add {
+    background: url(../images/icon/user_add.gif) no-repeat !important;
+}
+
+.icon-user-save {
+    background: url(../images/icon/save.gif) no-repeat !important;
+}
+
+.icon-user-edit {
+    background: url(../images/icon/user_edit.png) no-repeat !important;
+}
+
+.icon-user-delete {
+    background: url(../images/icon/user_delete.png) no-repeat !important;
+}
+
+.icon-reset {
+    background: url(../images/icon/stop.png) no-repeat !important;
+}
+
+.icon-grid {
+    background: url(../images/icon/grid.png) no-repeat !important;
+}
+
+.icon-search{
+	background: url(../images/icon/search.png) no-repeat !important;
+}
+
+.icon-add {
+	background: url(../images/icon/add.png) no-repeat !important;
+}
+
+.icon-edit {
+	background: url(../images/icon/cog_edit.png) no-repeat !important;
+}
+
+.icon-delete {
+    background: url(../images/icon/delete.gif) no-repeat !important;
+}
+
+.icon-mod{
+	background: url(../images/icon/plugin.gif) no-repeat !important;
+}
+
+.icon-info{
+	background: url(../images/icon/information.png) no-repeat !important;
+}
+
+.icon-history{
+	background: url(../images/icon/book.png) no-repeat !important;
+}
+
+.icon-unlock{
+	background: url(../images/icon/accept.png) no-repeat !important;
+}
+
+.icon-lock{
+	background: url(../images/icon/cross.gif) no-repeat !important;
+}
+.icon-back{
+	background: url(../images/icon/application_go.png) no-repeat !important;
+}
+
+.icon-rollback{
+	background: url(../images/icon/table_refresh.png) no-repeat !important;
+}
+
+.database-refresh{background: url(../images/icon/database_refresh.png) no-repeat !important;}
+
+.window-define-header{background: url(../images/icon/plugin.gif) no-repeat !important;}
+
+.icon-receipt{background: url(../images/icon/folder_wrench.png) no-repeat !important;}
+
+.icon-nav {
+	background: url(../images/icon/folder_go.png) no-repeat !important;
+}
+
+.tree-icon-parent {
+    background: url('../images/icon/tree_icons.png') no-repeat -224px 0;
+}
+
+.icon-close {
+	background: url('../images/icon/closex.gif') no-repeat !important;
+}
+
+.icon-guide{
+	background: url('../images/icon/tabicons.png') no-repeat -40px -200px !important;
+}
+
+.icon-welcome{
+	background: url('../images/icon/tabicons.png') no-repeat -200px -220px !important;
+}
+
+.icon-channel-list{
+	background: url('../images/icon/tabicons.png') no-repeat -120px -80px !important;
+}
+
+.icon-video-list{
+	background: url('../images/icon/tabicons.png') no-repeat -180px -200px !important;
+}
+
+.icon-live-list{
+	background: url('../images/icon/tabicons.png') no-repeat -160px -500px !important;
+}
+
+.icon-setting{
+	background: url('../images/icon/tabicons.png') no-repeat -20px -100px !important;
+}
+
+.icon-video{
+	background: url('../images/icon/tabicons.png') no-repeat -360px -260px !important;
+}
+
+.icon-upload{
+	background: url('../images/icon/tabicons.png') no-repeat -240px 0px !important;
+}
+
+.icon-area {
+background: url('../images/icon/tabicons.png') no-repeat -280px -420px !important;
+}
+
+.icon-auto {
+background: url('../images/icon/tabicons.png') no-repeat -260px 0px !important;
+}
+
+.icon-conver-list {
+background: url('../images/icon/tabicons.png') no-repeat -280px -20px !important;
+}

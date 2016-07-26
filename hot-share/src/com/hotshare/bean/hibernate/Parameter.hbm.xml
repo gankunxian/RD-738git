@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.hotshare.bean">
+	<class
+		name="Parameter"
+		table="s_parameter"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="parameterId"
+			type="int"
+			column="ID"
+		>
+			<generator class="native">
+							
+			</generator>
+		</id>
+
+		<property
+			name="parameterName"
+			column="NAME"
+			type="string"
+		/>
+		<property
+			name="state"
+			column="STATE"
+			type="short"
+		/>
+		<property
+			name="createTime"
+			column="CREATE_TIME"
+			type="java.util.Date"
+		/>
+		<property
+			name="createPerson"
+			column="CREATE_PERSON"
+			type="string"
+		/>
+		<property
+			name="modifyTime"
+			column="MODIFY_TIME"
+			type="java.util.Date"
+		/>
+		<property
+			name="modifyPerson"
+			column="MODIFY_PERSON"
+			type="string"
+		/>		
+		<property
+			name="remark"
+			column="REMARK"
+			type="string"
+		/>
+	</class>	
+</hibernate-mapping>

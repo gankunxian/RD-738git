@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.Function" table="s_service_function">
+		<comment>菜单功能表</comment>
+		<id name="id" type="java.lang.Integer" column="ID">
+			<generator class="native" />
+		</id>
+		<property name="funCode" column="FUN_CODE" type="java.lang.String" not-null="true" />
+		<property name="funName" type="java.lang.String">
+			<column name="FUN_NAME" sql-type="text"/>  
+		</property>
+		<property name="img" type="java.lang.String">
+			<column name="IMG" sql-type="text"/>  
+		</property>
+		<property name="descInfo" type="java.lang.String">
+			<column name="DESC_INFO" sql-type="text"/>  
+		</property>
+
+	</class>
+</hibernate-mapping>

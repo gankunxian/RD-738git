@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hotshare.bean.ModuleFunction" table="s_service_modulefunc">
+		<comment>模块功能权限关系表</comment>
+		<id name="id" type="java.lang.Integer" column="ID">
+			<generator class="native" />
+		</id>
+		<many-to-one name="module" column="MODULE_ID" class="com.hotshare.bean.Module"  not-null="true"  cascade="all"/> 
+        <many-to-one name="function" column="FUNCATION_ID" class="com.hotshare.bean.Function"  not-null="true" cascade="all"/> 
+	</class>
+</hibernate-mapping>
