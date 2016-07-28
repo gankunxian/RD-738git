@@ -239,4 +239,10 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 	public void merge(T obj) {
 		this.getCurrentSession().merge(obj);
 	}
+	
+	
+	public Query getMyQuery(String parameter) {
+		
+		return this.getSessionFactory().getCurrentSession().createQuery(parameter);
+	}
 }

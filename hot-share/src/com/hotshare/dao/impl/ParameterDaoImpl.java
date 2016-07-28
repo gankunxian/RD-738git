@@ -102,6 +102,14 @@ public class ParameterDaoImpl<T> extends BaseDaoImpl<T> implements ParameterDao<
 		sb.append(ids);
 		sb.append(")");
 		this.executeHql(sb.toString());
+		
+//		String hql = "from Abcabc where name = ?";
+//		Query query = this.getSessionFactory().getCurrentSession().createQuery(hql);
+//		System.out.println(ids);
+//		query.setParameter(0, ids);
+//		List<ParameterDetail> list = query.list();
+//		System.out.println(list.size());
+		//111";delete from u_abcabc;
 	}
 
 	/**通过id查出对象*/
@@ -117,6 +125,7 @@ public class ParameterDaoImpl<T> extends BaseDaoImpl<T> implements ParameterDao<
 		query.setParameter(0, detailName);
 		query.setParameter(1, parameterId);
 		List<ParameterDetail> list = query.list();
+		
 		return list == null || list.isEmpty() ? null : list.get(0);
 	}
 }
